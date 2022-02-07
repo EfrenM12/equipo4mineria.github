@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Aviles Norma Elixandra | Encarnacion Hernandez Raul | Mata Cortes Efren David | Medina Arcos Jonatan Ruben">
+    
+    <!-- recursos para la elaboracion de las graficas -->
+    <!-- grafica de barras, diagrama de bigotes -->
+    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-core.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-cartesian.min.js"></script>
+    
+    <!-- grafica de dispersion, grafiica de burbujas -->
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+
+    <!-- grafica de burbujas -->    
+    <script src="http://code.highcharts.com/highcharts-more.js"></script>
+    
+    <!-- histograma -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+
+    <!-- grafica de lineas -->
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+
+    <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+    
+    <!--Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--css-->
+    <link rel="stylesheet" href="../css/style.css">
+    
+        
+    <title>Equipo 4 | Tablas y graficas</title>
+</head>
+
+<body>
+    
+    <!--header-->
+    <header>
+        <img id="logo1" name="logo1" src="../img/logo1.png" alt="logo uaeh.png" width="180px"> 
+    </header>
+
+    <!--Container principal-->
+
+    <main class="container">    
+
+        <h1 class="tittle" id="tema1_tittle">Tablas y gráficas</h1>        
+        <br>
+        <br>
+        <section>    
+
+            <article class="article1">                
+                <h2>¿Qué es una tabla?</h2>
+                <br>
+                <br>
+                <p>
+                    Es un cuadro que se usa para organizar, clasificar y resumir 
+                    datos relevantes que se ha recolectado, con la finalidad de 
+                    informarse sobre algún tema
+                </p>
+                <p>
+                    Su uso permite registrar, ordenar y resumir los resultados cuantitavos recolectados de alguna variable investigada, así 
+                    como establecer relaciones entre diversas variables
+                </p>
+            </article>        
+
+            <br>
+            <br>
+
+            <article class="article1">
+                <table class="table_tema1">
+                    <p align="center">
+                        Cantidad de hombres y mujeres en la escuela primeria José María Morelos y Pavón.
+                    </p>
+                    <tr>
+                        <th>Grado</th> <th>Hombres</th> <th>Mujeres</th> <th>Totales</th>
+                    </tr>
+                    <tr>
+                        <td>1ro</td> <td>40</td> <td>45</td> <td>85</td>
+                    </tr>
+                    <tr>
+                        <td>2do</td> <td>40</td> <td>35</td> <td>75</td>
+                    </tr>
+                    <tr>
+                        <td>3ro</td> <td>34</td> <td>41</td> <td>75</td>
+                    </tr>
+                    <tr>
+                        <td>4to</td> <td>38</td> <td>32</td> <td>70</td>
+                    </tr>
+                    <tr>
+                        <td>5to</td> <td>30</td> <td>30</td> <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>6to</td> <td>25</td> <td>20</td> <td>45</td>
+                    </tr>
+                    <tfoot>
+                        <td><b>Totales</b></td> <td><b>207</b></td> <td><b>203</b></td> <td><b>410</b></td>
+                    </tfoot>
+                </table> 
+                <br>               
+                <p align="center">
+                    En la elaboración de la tabla estadística termina la fase clasificatoria de la investigación cuantitativa.
+                </p>
+            </article>            
+            
+            <br>
+            <br>
+            
+            <article class="article1">        
+                <h4>Algo más sobre variables</h4>
+                <br>
+                <h4>Variable estadística: </h4>
+                <br>
+                <p>
+                    Es cada una de las características
+                    o cualidades que poseen los individuos de una población. 
+                    Puede ser:
+                </p>
+
+                <ul>
+                    <li>
+                        <b>Cualitativa:</b> Cuando se refiere a características que 
+                        no pueden ser medidas con números. Se pueden clasificar por
+                        ejemplo, por nombre, por el nivel de preferencia.
+                    </li>                    
+                    <li>
+                        <b>Cuantitativa:</b> Cuando se refiere a características 
+                        que pueden ser medidas con números, ya sea con valores enteros o valores decimales.
+                    </li>
+                </ul>                
+
+                <br>
+                <br>
+                    
+                <TABLE class="table_tema1">
+                    <TR align="center">
+                        <TH>Cualitativa</TH> <!-- ROW 1, TABLE 1 -->
+                        <TH>Cuantitativa</TH>
+                    </TR>                                    
+                        <TR>
+                            <TD>
+                                <TABLE class="table_tema1">
+                                    <p>
+                                        Nivel de preferencia
+                                    </p>
+                                    <TR> <!-- ROW 1, TABLE 1 -->
+                                        <TH>Frutas</TH> <TH>No. de estudiantes</TH>                                
+                                    </TR>
+                                    <TR> <!-- ROW 2, TABLE 1 -->
+                                        <TD>Mango</TD>
+                                        <TD>8</TD>
+                                    </TR>
+                                    <TR> <!-- ROW 3, TABLE 1 -->
+                                        <TD>Naranja</TD>
+                                        <TD>11</TD>
+                                    </TR>
+                                    <TR> <!-- ROW 4, TABLE 1 -->
+                                        <TD>Fresa</TD>
+                                        <TD>6</TD>
+                                    </TR>
+                                    <TR> <!-- ROW 5, TABLE 1 -->
+                                        <TD><b>Totales</b></TD>
+                                        <TD><b>25</b></TD>
+                                    </TR>
+                                </TABLE>
+                            </TD>
+                            <TD>
+                                <TABLE class="table_tema1">
+                                    <p>
+                                        Conteo o mediciones
+                                    </p>
+                                    <TR> <!-- ROW 1, TABLE 2 -->
+                                        <TH colspan="2">Cantidad de estudiantes de 6to</TH> 
+                                    </TR>
+                                    <TR> <!-- ROW 2, TABLE 2 -->
+                                        <TD><b>Sección</b></TD>
+                                        <TD><b>No. de estudiantes</b></TD>
+                                    </TR>
+                                    <TR> <!-- ROW 3, TABLE 2 -->
+                                        <TD>A</TD>
+                                        <TD>25</TD>
+                                    </TR>
+                                    <TR> <!-- ROW 4, TABLE 2 -->
+                                        <TD>B</TD>
+                                        <TD>28</TD>
+                                    </TR>
+                                    <TR> <!-- ROW 5, TABLE 2 -->
+                                        <TD>C</TD>
+                                        <TD>23</TD>
+                                    </TR>
+                                    <TR> <!-- ROW 6, TABLE 2 -->
+                                        <TD><b>Totales</b></TD>
+                                        <TD><b>76</b></TD>
+                                    </TR>
+                                </TABLE>
+                            </TD>
+                        </TR>                
+                    </TABLE>             
+                    <br>        
+                    <p>
+                        Las variables cualitativas y las cuantitativas pueden 
+                        representarse de forma gráfica. Esto tiene la ventaja de 
+                        poder interpretar y analizar de forma más clara las 
+                        variables que se están estudiando.
+                    </p>
+            </article>
+
+            <br>
+            <br>
+
+            <article class="article1">
+                <h3 class="">Tipos de tablas</h3>
+                <br>                
+                <h4>Tabla simple</h4>
+                <br>
+                <p>
+                    Esta tabla sirve para registrar los datos que se obtuvieron
+                    de una variable. Si la población estudiada es pequeña y 
+                    no se necesita mayor información, se elabora una tabla 
+                    sencilla en donde se presenta el total de datos
+                </p>
+                <br>
+                <table class="table_tema1">
+                    <tr>
+                        <th>Variable</th>
+                        <th>¿Cuantos años tienen los hijos de Pedro Luis?</th>                    
+                        <th>Población</th>
+                    </tr>
+                    <tr>
+                        <td>La edad de cada uno de los hijos</td>
+                        <td>
+                            <table class="tabla_tema1">
+                                <tr>
+                                    <td>Edades de los hijos</td>
+                                    <td>4</td>                                
+                                    <td>6</td>
+                                    <td>7</td>
+                                    <td>9</td>
+                                    <td>11</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>Los 5 hijos de Pedro Luis</td>
+                    </tr>
+                </table>        
+                <br>
+                <br>
+                <br>
+
+
+                <h4>Tabla de doble entrada</h4>
+                <br>
+                <p>
+                    Es la tabla en la que se recoge más de un dato o valor 
+                    de una variable de una misma población o muestra.
+                </p>            
+                <br>            
+                <p align="center">
+                    ¿Cuantos hombres y cuantas mujeres estudian
+                    en sexto grado de primaria
+                </p>
+                <TABLE class="table_tema1">
+                    <TR> 
+                        <TH>Secciones</TH> 
+                        <TH>Mujeres</TH>
+                        <TH>Hombres</TH>
+                        <TH>Total por seccion</TH>
+                    </TR>
+                    <TR> 
+                        <TD>A</TD>
+                        <TD>13</TD>
+                        <TD>12</TD>
+                        <TD>25</TD>
+                    </TR>
+                    <TR> 
+                        <TD>B</TD>
+                        <TD>14</TD>
+                        <TD>14</TD>
+                        <TD>28</TD>
+                    </TR>
+                    <TR> 
+                        <TD>C</TD>
+                        <TD>10</TD>
+                        <TD>13</TD>
+                        <TD>23</TD>
+                    </TR>
+                    <TR> 
+                        <TD>Totales</TD>
+                        <TD>37</TD>
+                        <TD>39</TD>
+                        <TD>76</TD>
+                    </TR>                    
+                </TABLE>
+                <br>
+                <p align="center">
+                    <b>Valores de una variable: Mujeres, Hombres, A, B, C.</b> 
+                </p>
+            </article>    
+        </section>                
+        <!--Fin de la secciones de tabla-->
+
+        <br>
+        <br>
+
+        <!-- apartado de graficas -->
+        <section class="">
+            <article class="article1">
+                <h2>¿Qué es una gráfica estadística?</h2>
+                <br>
+                <br>
+                <p>
+                    Es un dibujo utilizado para representar la información 
+                    recolectada, que tienen entre otras funciones:
+                </p>
+                <br>
+                <ul>                
+                    <li>Hacer visibles los datos que representa.</li>
+                    <li>Mostrar los posibles cambios de esos datos en el tiempo y en el espacio.</li>
+                    <li>Evidenciar las relaciones que pueden existir en los datos que representa.</li>
+                    <li>Sistematizar y sintetizar los datos.</li>
+                    <li>Aclarar y complementar las tablas y las exposiciones teóricas o cuantitativa</li>
+                </ul>
+                <br>
+
+                <a href="" alt="Tipos de graficas"> <!--Para insertar un hpervinculo en la imagen-->
+                    <img class="graficas" id="grafica1" src="../img/exposiciones img/graficas.jpg.crdownload" alt="imagen ocaso">
+                </a>
+
+                <br>
+
+                <h3>Grafico de barras</h3>
+                <p>
+                    El gráfico de barras es también conocido como gráfico de columnas.
+                </p>
+                <p>                    
+                    El gráfico de barras clásico utiliza barras horizontales o verticales para mostrar comparaciones numéricas que de diferentes categorías. Uno de los ejes de la gráfica muestra las categorías específicas que se comparan y el otro eje representa una escala de valores.
+                </p>
+                <p>
+                    Los gráficos de barras se distinguen de los histogramas en que no muestran desarrollos continuos a lo largo de un intervalo. Los datos del gráfico de barras están asociados a los conceptos que se valoran y por lo tanto exponen información cuantitativa de cada uno de ellos.
+                </p>
+                <br>                
+                <div id="barras"></div> 
+                
+                <h3>Gráfica de dispersión</h3>                
+                <p>
+                    Una gráfica de dispersión puede ser usada para datos en la forma de parejas ordenadas de números. El resultado será un montón de puntos "dispersos" alrededor del plano.
+                </p>
+                <p>
+                    Si la tendencia general es que los puntos suban a la derecha de la gráfica, entonces decimos que hay una <b>correlación positiva</b> entre las dos variables medidas. Si los puntos caen a la izquierda de la gráfica, decimos que hay una correlación negativa . Si no hay tendencia general, entonces <b>no hay correlación</b>.
+                </p>
+                <p>
+                    Si la tendencia no es muy pronunciada – esto es, los puntos están dispersos ampliamente – entonces decimos que las variables están <b>débilmente correlacionadas</b>. Si la correlación es más pronunciada, decimos que las variables están <b>fuertemente correlacionadas</b>.
+                </p>                    
+                </p>
+                <br>
+                <!-- <div id="dispersion" class=""></div> -->
+                <div id="dispersion" class="graficas"></div>
+
+                <h3>Diagrama de cajas y bigotes</h3>
+                <p>
+                    Los diagramas de cajas y bigotes nos sirven para representar visualmente grupos de datos numéricos.
+                </p>
+                <p>                    
+                    Las líneas que se extienden en paralelo en ambos extremos de las cajas son conocidos como «bigotes», y se utilizan para indicar la variabilidad fuera de los cuartiles superior e inferior. Los valores atípicos a veces se representan como puntos individuales que están en línea con las barbas.
+                </p>
+                <p>
+                    La mayor utilidad de los diagramas caja-bigotes es para comparar dos o más conjuntos de datos.
+                    Los tipos de observaciones que uno puede hacer al ver un diagrama de cajas y bigotes:
+                    <ul>
+                        <li>Cuáles son los valores clave, tales como: el promedio, el percentil 25 medio, etc.</li>
+                        <li>Si hay valores atípicos y cuáles son sus valores.</li>
+                        <li>Si los datos son simétricos.</li>
+                        <li>Cuán estrechamente se agrupan los datos.</li>
+                        <li>Si los datos están sesgados y si es así, en qué dirección.</li>
+                    </ul>
+                    
+                </p>                            
+                <br>
+
+                <div id="cajas" class="graficas"></div>                                                
+
+                <h3>Grafico de burbujas</h3>
+                <p>
+                    Un gráfico de burbujas es una variación de un gráfico 
+                    de dispersión en el que los puntos de datos se 
+                    reemplazan por burbujas y una dimensión adicional de 
+                    los datos se representa en el tamaño de las burbujas.
+                </p>
+                <p>
+                    Las burbujas se grafican de acuerdo a los valores de X y de Y mientras que su tamaño será proporcional al tercer valor.
+                </p>
+                <p>
+                    Los gráficos de burbuja son frecuentemente utilizados para presentar información financiera ya que los diferentes tamaños de las burbujas enfatizan adecuadamente los diferentes valores financieros.
+                </p>
+                <br>
+                <div id="burbujas" class="graficas"></div>
+                
+
+                <h3>Histograma</h3>
+                <p>
+                    Un histograma es de gran utilidad para la distribución 
+                    de datos a través de un intervalo continuo o cierto período 
+                    de tiempo. Cada barra representa un histograma de la 
+                    frecuencia tabulada en cada intervalo. El área 
+                    longitudinal del histograma corresponde al número de datos.
+                </p>
+                <p>                    
+                    Los histogramas ayudan a tener una estimación en cuanto a 
+                    dónde se concentran los valores, lo que los extremos se 
+                    encuentran y si hay lagunas o valores inusuales.
+                </p>                
+                <p>
+                    Se representan los intervalos de clase en el eje de abcisas (eje horizontal) y las frecuencias, absolutas o relativas, en el de ordenadas (eje vertical).
+                </p>
+                <br>
+                <!-- <div id="histograma"></div> -->
+                <canvas id="histograma" width="700" height="330"></canvas>
+                <br>
+
+                <h3>Grafica de lineas</h3>
+                <p>
+                    Los gráficos de líneas muestran tendencias o cambios a lo largo del tiempo mostrando una serie de puntos de datos conectados por líneas rectas.
+                </p>
+                <p>                    
+                    Si existen cambios pequeños y frecuentes en la serie, los gráficos de líneas son más eficaces que los gráficos de barras para visualizar el cambio a lo largo del tiempo.
+                </p>      
+                <p>
+                    Los gráficos de líneas también resultan útiles para comparar los cambios a lo largo del mismo período de tiempo en varios grupos o categorías.
+                </p>              
+                <br>
+                <div id="chartContainer" class="graficas"></div>                
+                <br>
+
+                
+                <script src="../js/funciones.js"></script>                                                       
+            </article>
+        </section>
+    
+    </main>
+
+    <br>
+    <br>
+
+    <!--header-->
+    <footer>
+        <img id="logo1" name="logo1" src="../img/logo1.png" alt="logo uaeh.png" width="180px"> 
+    </footer>
+    
+</body>
+</html>

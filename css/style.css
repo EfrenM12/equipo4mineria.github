@@ -1,0 +1,144 @@
+body{
+    background-color: rgb(24, 24, 24);
+    /* margin: 20px; */
+}
+.container{
+    background: rgb(30, 29, 36);
+    border: 2px rgb(51, 54, 53) solid;
+}
+header{
+    text-align: center;
+    color: white;
+    font-family: Arial Black;
+    background-color: rgb(116, 14, 14);
+    padding: 10px;
+    border: 1px solid rgb(139, 44, 44);
+}
+.nav{
+    font-size: 25px;
+    font-family: tahoma;
+    /* margin: 10px; */
+}
+.nav ul li{
+    text-align: center;
+    padding: 10px;
+    /* background-color: red; */
+    display:inline-block;
+}
+.nav ul li a{
+    color: rgb(204, 203, 203);
+    text-decoration: none;
+}
+.nav ul li a:hover{
+    color: White;
+    border-bottom: 2px solid;
+    transition: color 0.2s linear 0.2s;
+}
+/************Index**********/
+.tittle{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+.article1{
+    color: white;
+    text-align: justify;
+}
+.articulo1{
+    padding: 15px;
+    background-color: rgb(139, 130, 56);
+}
+footer{
+    text-align: center;
+    color: white;
+    font-family: Arial Black;
+    background-color: rgb(116, 14, 14);
+    padding: 10px;
+    border: 1px solid rgb(139, 44, 44);
+}
+/***************Exposiciones************/
+.exposiciones{
+    padding: 20px;
+    /* background-color: red; */
+    color: White;
+}
+.exposiciones ul li a{
+    color: white;
+    text-decoration: none;
+    /* background-color: red; */
+}
+.exposiciones ul li a:hover{
+    color: rgb(168, 168, 168);
+    text-decoration: none;
+}
+.Nosotros{
+    color: white;
+}
+
+
+/*************Pag Tablas y graficas*************/
+
+#tema1_tittle{
+    font-size: 40px;
+}
+
+.table_tema1{
+    margin: auto;    
+    width: 70%;    
+    color: #ffffff;
+    /**align-items: center;**/
+    border-color: #ffffff;
+    letter-spacing: 1px;
+    text-align: center;
+    border-style: solid;
+}
+
+.table_tema1 table{
+    margin: auto;
+    text-align: center;
+    width: 100%;    
+    color: #ffffff;
+    border-style: none;
+    letter-spacing: 1px;
+} 
+
+.table_tema1 table th{    
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+th{
+    padding-bottom: 20px;
+}
+
+#barras{
+    margin: 10px auto 80px auto; 
+    display: block;
+    width: 700px;
+    height: 330px;   
+    border-color: #ffffff;
+    background-color: #ffffff;
+
+ }
+ .graficas{
+    margin: 10px auto 80px auto; 
+    display: block;
+    width: 700px;
+    height: 330px;   
+    border-color: #ffffff;
+    background-color: #ffffff;   
+ }
+
+ #dispersion{
+     background-color: #ffffff;
+ }
+
+ #histograma{
+     margin: 10px auto 80px auto; 
+     display: block;
+     width: 700px;
+     height: 330px;
+     background-color: #ffffff;
+}
+
+
